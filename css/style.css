@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('../assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk';
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.card {
+    position: relative;
+    width: 22%;
+    height: 476px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.result {
+    box-sizing: border-box;
+    background-image: linear-gradient(rgb(120, 87, 255), rgb(46, 43, 233));
+    z-index: 100;
+}
+
+.result__title {
+    color: rgba(255, 255, 255, 0.774);
+    margin-bottom: 33px;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.result__final {
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.result__num {
+    color: rgba(255, 255, 255, 0.397);
+}
+
+.result__notificacion {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.result__description {
+    text-align: center;
+    color:rgba(255, 255, 255, 0.781);
+    width: 65%;
+    margin: 0;
+}
+
+/*resumen*/
+.summary {
+    box-sizing: border-box;
+    align-items: flex-start;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 20px 40px rgba(200, 199, 255, 0.548);
+    border-radius: 0 30px 30px 0;
+    padding: 0 35px 0 70px;
+    transform: translateX(-26px);
+    width: 23%;
+}
+
+.summary__title {
+    color: rgb(48, 59, 90);
+    margin-bottom: 25px;
+}
+
+.summary-contain {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 15px;
+    border-radius: 10px;
+}
+
+.summary-contenido {
+    display: flex;
+}
+
+.bg-reaction {
+    background-color: rgba(255, 87, 87, 0.116);
+}
+
+.color-reaction {
+    color: rgb(255, 87, 87);
+    font-weight: 700;
+}
+
+.summary__num {
+    color: rgba(48, 59, 90, 0.596);
+    font-weight: 700;
+}
+
+.summary__result {
+    color: rgb(48, 59, 90);
+    font-weight: 700;
+    padding-right: 10px; 
+}
+
+.bg-memory {
+    background-color: rgba(255, 176, 31, 0.116);
+}
+
+.color-memory {
+    color: rgb(255, 176, 31);
+    font-weight: 700;
+}
+
+.bg-verbal {
+    background-color: rgb(0, 189, 145, 0.116);
+}
+
+.color-verbal {
+    color: rgb(0, 189, 145);
+    font-weight: 700;
+}
+
+.bg-visual {
+    background-color: rgb(17, 37, 212, 0.116);
+}
+
+.color-visual {
+    color: rgb(17, 37, 212);
+    font-weight: 700;
+}
+
+.spacing {
+    padding-left: 10px;
+}
+
+.btn {
+    background-color: rgb(48, 59, 90);
+    color: rgb(255, 255, 255);   
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 0;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+/*Desing response*/
+
+/*
+320px (para dispositivos móviles pequeños)
+480px (para dispositivos móviles más grandes)
+768px (para tablets y dispositivos móviles en modo horizontal)
+1024px (para pantallas de escritorio y laptops)
+*/
+
+@media screen and (max-width: 320px) {
+    .contenido {
+        flex-direction: column;
+        
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .result {
+        border-radius: 0 0 30px 30px;
+    }
+
+    .summary {
+        position: relative;
+        top: -10px;
+        padding: 30px;
+        border-radius: 0;
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contenido {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .result {
+        border-radius: 0 0 30px 30px;
+    }
+
+    .summary {
+        position: relative;
+        top: -10px;
+        padding: 30px;
+        border-radius: 0;
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contenido {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .result {
+        border-radius: 0 0 30px 30px;
+    }
+
+    .summary {
+        position: relative;
+        top: -10px;
+        padding: 30px;
+        border-radius: 0;
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        width: 80%;
+    }
+
+    .result__description {
+        margin-bottom: 12px;
+    }
+
+    .btn {
+        margin: 20px 0;
+    }
+}
+
