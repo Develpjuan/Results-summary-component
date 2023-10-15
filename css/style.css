@@ -169,23 +169,27 @@ body {
     margin-top: 30px;
 }
 
-/*Desing response*/
+@media screen and (max-width: 1024px) {
+    .card {
+        width: 40%;
+    }
 
-/*
-320px (para dispositivos móviles pequeños)
-480px (para dispositivos móviles más grandes)
-768px (para tablets y dispositivos móviles en modo horizontal)
-1024px (para pantallas de escritorio y laptops)
-*/
+    .result__description {
+        margin-bottom: 12px;
+    }
 
-@media screen and (max-width: 320px) {
+    .btn {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .contenido {
         flex-direction: column;
-        
     }
 
     .card {
-        width: 100%;
+        width: 75%;
     }
 
     .result {
@@ -207,7 +211,7 @@ body {
     }
 
     .card {
-        width: 100%;
+        width: 80%;
     }
 
     .result {
@@ -223,7 +227,7 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 320px) {
     .contenido {
         flex-direction: column;
     }
@@ -245,17 +249,9 @@ body {
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .card {
-        width: 80%;
-    }
 
-    .result__description {
-        margin-bottom: 12px;
-    }
 
-    .btn {
-        margin: 20px 0;
-    }
-}
+
+
+
 
